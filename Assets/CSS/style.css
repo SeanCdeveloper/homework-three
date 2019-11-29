@@ -1,0 +1,53 @@
+.container {
+    position: absolute;
+    margin-left: 6rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border: 1px solid black;
+    background: blue;
+    width: 80%;
+    height: 65%;
+    font-weight: bold;
+    text-align: center;
+    left: -1.5rem;
+}
+
+.content {
+    position: relative;
+    background: red;
+    margin-top: 4em;
+    margin-left: 8%;
+    margin-right: 2%;
+    text-align: left;
+    width: 80%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+h4 {
+    text-align: left;
+    padding-left: 5%;
+}
+
+#display {
+    width: 85%;
+    height: 6rem;
+    margin-left: 6%;
+}
+
+#generateBtn, #copyPwBtn {
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 20px;
+    background: rgb(155, 3, 3);
+    color: white;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+#generateBtn {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+

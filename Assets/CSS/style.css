@@ -38,6 +38,8 @@ hr {
     height: 6rem;
     margin-left: 6%;
     margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px dashed grey;
 }
 
 #generateBtn, #copyBtn {
@@ -47,7 +49,7 @@ hr {
     background: rgb(155, 3, 3);
     color: white;
     font-weight: bold;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 #generateBtn {

@@ -1,78 +1,29 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <title>PWGeneratorPractice-prompt</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="#">
-    <script rel="stylesheet" href="#"></script>
-    <style>
-        .content {
-            margin-top: 16px;
-            margin-bottom: 18px;
-            background-color: lightgrey;
-            padding: 20px;
-            width: 100%;
-        }
-
-        #display {
-            width: 100%;
-        }
-
-        #slider {
-            width: 100%;
-            width: 100px;
-        }
-
-        #length {
-            display: inline;
-        }
-    </style>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
 <body>
-    <div class="content">
-        <h4>Random Password Generator</h4>
-        <br>
-        <!--Display Element for generated Password-->
-        <input type="text" id="display">
-        <br>
-        <!--Button Object For Generating Password-->
-        <button onclick="generate()">Generate Password</button>
-        <!--Button Object For Copying Password to ClipBoard-->
-        <button onclick="copyPassword()">Copy to Clipboard</button>
+    <div class="container">
+        <h3>Password Generator</h3>
+        <div class="content">
+            <h4>Generate a Password</h4>
+            <hr>
+            <!--Display Element for generated Password-->
+            <input type="text" id="display">
+            <br>
+            <div id="buttonWrap">
+                <!--Button Object For Generating Password-->
+                <button id="generateBtn">Generate Password</button>
+                <!--Button Object For Copying Password to ClipBoard-->
+                <button id="copyBtn">Copy to Clipboard</button>
+            </div>
+        </div>
+        <script src="Assets/JavaScript/script.js"></script>
     </div>
-    <script type="text/javascript">
-
-        /* Generate Random Password */
-
-        function generate() {
-            var pwRange = prompt("How Many Characters Do You Want In Your Password?");
-
-            // Set Password Length as Value of prompt() Method
-            var pwLength = pwRange;
-
-            // Variables Containing Possible Password Values To Use For Password
-            var values = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
-
-            // Open-Quotation Value for Storing Generated Password
-            var password = "";
-
-            // For Loop Choosing Password Characters Based On Selected Length
-            for (var i = 0; i < pwLength; i++) {
-
-            password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length -1)));
-            }
-            // Adding PassWord to input#display Object
-            alert(pwRange);
-            document.getElementById("display").value = password;
-        }
-
-        /* Copy to Clipboard Function */
-        function copyPassword() {
-            document.getElementById("display").select();
-            document.execCommand("Copy");
-            alert("Password Copied to ClipBoard");
-        }
-    </script>
 </body>
 </html>

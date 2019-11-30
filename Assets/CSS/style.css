@@ -5,9 +5,8 @@
     margin-top: 1rem;
     margin-bottom: 3rem;
     border: 1px solid black;
-    background: blue;
     width: 80%;
-    height: 65%;
+    height: 90%;
     font-weight: bold;
     text-align: center;
     left: -1.5rem;
@@ -15,13 +14,12 @@
 
 .content {
     position: relative;
-    background: red;
-    margin-top: 4em;
+    margin-top: 2em;
     margin-left: 8%;
     margin-right: 2%;
     text-align: left;
     width: 80%;
-    height: 50%;
+    height: 18rem;
     border: 1px solid black;
 }
 
@@ -30,14 +28,20 @@ h4 {
     padding-left: 5%;
 }
 
+hr {
+    width: 86%;
+    transform: translateX(-4px);
+}
+
 #display {
     width: 85%;
     height: 6rem;
     margin-left: 6%;
+    margin-top: 2%;
 }
 
-#generateBtn, #copyPwBtn {
-    height: 2.5rem;
+#generateBtn, #copyBtn {
+    height: 2rem;
     width: 10rem;
     border-radius: 20px;
     background: rgb(155, 3, 3);
@@ -47,7 +51,11 @@ h4 {
 }
 
 #generateBtn {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
 }
+
+#copyBtn {
+    margin-left: 10%;
+}
+
 

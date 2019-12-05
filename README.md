@@ -22,7 +22,7 @@ The length of the password can be between 8 and 128 characters if the user choos
 
 ## Picture of Application
 
-[password generator demo] <img src="../Assets/Images/myPassword-Generator.png" alt="myPasswordGenerator">
+<img width="640" alt="myPasswordGenerator" src="https://user-images.githubusercontent.com/55586107/70246149-3a81f880-1745-11ea-822a-98a05572e3a4.png">
 
 ## Installation
 This Application is run on the browser; therefore, the user does not have to install or download anything; it is ready to be deployed inside the browser.  The user loads the WebPage, clicks on the “Generate Password” Button, answers a prompt regrading how long they want the length of their password to be, and, after confirming the length through a prompt re-stating the chosen length, a password is generated.  Then the password can be easily copied and pasted for use by clicking on the “Copy to Clipboard”button.  

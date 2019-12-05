@@ -22,7 +22,7 @@ document.getElementById("copyBtn").addEventListener("click", copyPassword);
         password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
     }
     // Adding PassWord to input#display Object
-    alert(pwRange);
+    var areYouSure = alert(pwRange);
     document.getElementById("display").value = password;
 }
 

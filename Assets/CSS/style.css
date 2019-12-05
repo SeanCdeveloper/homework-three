@@ -62,11 +62,6 @@ hr {
 
 /* Responsive Design Components */
 
-/*
-* {
-    box-sizing: border-box;
-}
-*/
 @media screen and (max-width: 698px) {
     #generateBtn, #copyBtn {
         width: 7rem;
